@@ -12,8 +12,6 @@ st.set_page_config(
 )
 
 st.title("⚖️ UAE Labor Law Assistant")
-
-# ✅ Cache RAG chain
 @st.cache_resource
 def load_rag_chain():
     vectorstore = load_vector_store()
